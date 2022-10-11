@@ -1,76 +1,110 @@
 :root {
-    --font-16bit: 'Press Start 2P', cursive;
+  --font-16bit: 'Press Start 2P', cursive;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: var(--font-16bit);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0.5rem;
+  font-family: var(--font-16bit);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
 }
-p {
-    line-height: 1.5rem;
-    padding: 1rem;
-    font-size: small;
-    background-color: rgba(243, 243, 243, 0.644);
-    border-radius: 10px;
+.game-description {
+  line-height: 1.5rem;
+  padding: 2rem;
+  margin: 1rem;
+  font-size: small;
+  background-color: rgba(243, 243, 243, 0.644);
+  border-radius: 10px;
+  text-align: center;
 }
 
 a {
-    text-decoration: none;
-    color: black;
-    
+  text-decoration: none;
+  color: wheat;
 }
+
 main {
-    padding: 2rem;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    width: 40rem;
-    height: 30rem;
-}
-
-figcaption {
-    margin-top: 0.5rem;
-}
-
-figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-form {
-    width: 100%;
-    background-color: rgba(92, 92, 92, 0.856);
-    border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
 
 fieldset {
-    display: flex;
-    border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+legend {
+  margin-left: 40%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 40rem;
+  height: 30rem;
+  margin-bottom: 1rem;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+form {
+  width: 100%;
+  background-color: rgba(92, 92, 92, 0.856);
+  border: 2px solid black;
+}
+
+fieldset {
+  display: flex;
+  border: 0;
 }
 button {
-    font-family: sans-serif;
-    font-size: medium;
+  margin: 0.3rem;
+  font-family: sans-serif;
+  font-size: medium;
+  padding: 0.4rem;
+  background-color: rgb(39, 39, 33);
+  color: wheat;
+  border: 2px solid wheat;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(190, 161, 123);
+  color: black;
+  border: 2px solid black;
+}
+
+button:hover a {
+  color: black;
 }

@@ -35,7 +35,7 @@
           <figcaption>"Hey, you, you're finally awake?"</figcaption>
         </figure>
 
-        <p class="game description">
+        <p class="game-description">
           You look to your left and see a beautiful winter landscape <br />
           And to your right is a cart with several strangely dressed people<br />
           Has Todd Howard finally worked out how to install Skyrim directly into
@@ -58,15 +58,27 @@
             </div>
             <div class="form-elem">
               <label for="second-name">Second Name:</label>
-              <input type="text" name="second-name" id="second-name" required>
+              <input type="text" name="second-name" id="second-name" required />
             </div>
+            <button type="submit" id="form-submit">Submit</button>
           </fieldset>
         </form>
-        <p class="game-description">"So $first-name $second-name I hear you've been having some trouble making semantic HTML stick?" <br>
-            (wait, can he read my mind?) <br>
-            <button><a href="pages/question1.html">Yeah, I don't get it just use a div!</a></button> <button><a href="pages/reset.html">No, I'm good (Just let me get back to playing actual Skyrim!)</a></button>
-
+        <p class="game-description">
+          "So <span id="name-one">random</span>
+          <span id="name-two">person</span> I hear you've been having some
+          trouble making semantic HTML stick?" <br />
+          (wait, can he read my mind?) <br />
         </p>
+        <button>
+          <a href="pages/question1.html"
+            >Yeah, I don't get it just use a div!</a
+          >
+        </button>
+        <button>
+          <a href="pages/reset.html"
+            >No, I'm good (Just let me get back to playing actual Skyrim!)</a
+          >
+        </button>
       </section>
     </main>
   </body>
