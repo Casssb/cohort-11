@@ -83,6 +83,14 @@ form {
   border: 2px solid black;
 }
 
+#name-one {
+    color: rgb(57, 138, 138);
+}
+
+#name-two {
+    color: rgb(86, 43, 126);
+}
+
 fieldset {
   display: flex;
   border: 0;
