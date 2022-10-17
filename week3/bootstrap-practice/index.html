@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <main class="container-fluid text-center">
+      <h1>Hello</h1>
+      <section class="container w-75">
+        <div class="row">
+          <div class="col-4">
+            <img
+              src="img/chad-montano--GFCYhoRe48-unsplash.jpg"
+              class="w-100 shadow-3-strong mb-4"
+              alt="Tasty steak"
+            />
+
+            <img
+              src="img/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg"
+              class="w-100 shadow-sm p-3 mb-5 bg-body rounded"
+              alt="Another tasty steak"
+            />
+          </div>
+
+          <div class="col-4">
+            <img
+              src="img/eiliv-aceron-uBigm8w_MpA-unsplash.jpg"
+              class="w-100 shadow p-3 mb-5 bg-body rounded"
+              alt="3rd steak"
+            />
+
+            <img
+              src="img/jose-ignacio-pompe-s-Z-h0fEiBM-unsplash.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Burger"
+            />
+          </div>
+
+          <div class="col-4">
+            <img
+              src="img/madie-hamilton-dZ-HI4EuWcA-unsplash.jpg"
+              class="w-100 shadow p-3 mb-5 bg-body rounded mb-4"
+              alt="Another burger"
+            />
+
+            <img
+              src="img/tim-toomey-pe9dvM1rQkM-unsplash.jpg"
+              class="w-100 shadow p-3 mb-5 bg-body rounded mb-4"
+              alt="A 3rd burger"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="container w-75">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/tim-toomey-pe9dvM1rQkM-unsplash.jpg"
+                class="d-block w-100 rounded"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg"
+                class="d-block w-100 rounded"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/jose-ignacio-pompe-s-Z-h0fEiBM-unsplash.jpg"
+                class="d-block w-100 rounded"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <a href="page2.html" class="btn btn-primary btn-lg m-2">Next Page</a>
+    </main>
+  </body>
+</html>
