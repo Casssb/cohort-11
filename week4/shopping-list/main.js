@@ -18,25 +18,26 @@ const shoppingList = [
 const displayListMessage = () => {
   const listLength = shoppingList.length - 1;
   const entry = searchText.value.toLowerCase();
-  for (let i = 0; i < listLength; i++) {
+  for (let i = 0; i <= listLength; i++) {
     if (entry === shoppingList[i]) {
       resultText.textContent = "it's on the list!";
       return;
     }
     resultText.textContent = "it's been added to the list";
   }
+  listText.innerHTML = '';
 };
 
 const checkIfOnList = () => {
-    if (!shoppingList.includes(searchText.value)) {
-        shoppingList.push(searchText.value);
-    }
-}
+  if (!shoppingList.includes(searchText.value)) {
+    shoppingList.push(searchText.value);
+  }
+};
 
 const displayList = () => {
   listText.innerHTML = '';
   shoppingList.forEach((item) => {
-    listText.textContent += `${item} ,`;
+    listText.textContent += `${item}, `;
   });
 };
 

@@ -83,6 +83,18 @@ form {
   border: 2px solid black;
 }
 
+legend {
+  padding-top: 1rem;
+}
+
+.form-elem {
+  padding: 1rem;
+}
+
+.form-elem input {
+  border-radius: 5px;
+}
+
 #name-one {
     color: rgb(57, 138, 138);
 }
