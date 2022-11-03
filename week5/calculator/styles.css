@@ -24,74 +24,72 @@ main {
 }
 
 button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    border: none;
-    border-radius: 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .screen {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 0.2rem;
-    font-size: 3rem;
-    font-weight: 500;
-    background-color: rgba(0, 0, 0, 0.158);
-    grid-column: 1/-1;
-    border-radius: 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0.2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.158);
+  grid-column: 1/-1;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .number {
-    background-color: rgba(255, 255, 255, 0.432);
-
+  background-color: rgba(255, 255, 255, 0.432);
 }
 
 .number:hover {
-    background-color: rgba(255, 255, 255, 0.832);
-
+  background-color: rgba(255, 255, 255, 0.832);
 }
 
 .operator {
-    background-color: rgba(130, 168, 199, 0.582);
+  background-color: rgba(130, 168, 199, 0.582);
 }
 
 .operator:hover {
-    background-color: rgba(130, 168, 199, 0.982);
+  background-color: rgba(130, 168, 199, 0.982);
 }
 
 .clear {
-    grid-column: span 2;
-    background-color: rgba(235, 92, 92, 0.404);
+  grid-column: span 2;
+  background-color: rgba(235, 92, 92, 0.404);
 }
 
 .back {
-    font-size: 3rem;
-    font-weight: 800;
-    padding-bottom: 15%;
-    background-color: rgba(219, 171, 81, 0.356);
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 15%;
+  background-color: rgba(219, 171, 81, 0.356);
 }
 
 .back:hover {
-    background-color: rgba(219, 171, 81, 0.756);
+  background-color: rgba(219, 171, 81, 0.756);
 }
 
 .clear:hover {
-    background-color: rgba(235, 92, 92, 0.904);
+  background-color: rgba(235, 92, 92, 0.904);
 }
 
 .equals {
-    grid-column: span 2;
-    background-color: rgba(55, 192, 55, 0.315);
+  grid-column: span 2;
+  background-color: rgba(55, 192, 55, 0.315);
 }
 
 .equals:hover {
-    background-color: rgba(55, 192, 55, 0.815);
+  background-color: rgba(55, 192, 55, 0.815);
 }
