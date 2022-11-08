@@ -21,10 +21,10 @@ const appendNumberToScreen = (num) => {
   firstOperand = entryScreen.textContent;
 };
 
-/* If the screen is empty (no numbers chosen) will prevent you selecting
+/* If the screen is empty (no numbers chosen)  it will prevent you selecting
 an operation. Else if will store the number on the screen in secondOperand, store
 the operation and empty the firstOperand. If there is already an operator stored
-it will go straight to calculate*/
+it will go straight to calculate (to allow chaining operations)*/
 const prepareOperation = (operator) => {
   if (entryScreen.textContent === '') return;
   if (operation !== null) detectCheek();
