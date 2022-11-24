@@ -38,7 +38,7 @@ main {
     gap: 1rem;
     padding: 2rem;
     border-radius: 10px;
-    max-width: 20rem;
+    width: 19.8rem;
     background-color: var(--col-dark-greyish-blue);
 }
 
@@ -57,7 +57,14 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 0.2rem;
+    height: 1rem;
+    margin-bottom: 0.1rem;
+    background-image: url('./images/pattern-divider-desktop.svg');
+    background-repeat: no-repeat;
+}
+
+.divider svg {
+    width: 100%;
 }
 
 
@@ -79,4 +86,11 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+    main {
+        width: 14.6rem;
+    }
+
+    .divider {
+        background-image: url('images/pattern-divider-mobile.svg');
+    }
     }
