@@ -1,96 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
 :root {
-    --col-light-cyan: hsl(193, 38%, 86%);
-    --col-neon-green: hsl(150, 100%, 66%);
-    --col-greyish-blue: hsl(217, 19%, 38%);
-    --col-dark-greyish-blue: hsl(217, 19%, 24%);
-    --col-dark-blue: hsl(218, 23%, 16%);
+  --col-light-cyan: hsl(193, 38%, 86%);
+  --col-neon-green: hsl(150, 100%, 66%);
+  --col-greyish-blue: hsl(217, 19%, 38%);
+  --col-dark-greyish-blue: hsl(217, 19%, 24%);
+  --col-dark-blue: hsl(218, 23%, 16%);
 
-    --ff-main: 'Manrope', sans-serif;
+  --ff-main: 'Manrope', sans-serif;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: var(--ff-main);
-    font-size: 28px;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-main);
+  font-size: 28px;
+}
 
 body {
-    height: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--col-dark-blue);
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--col-dark-blue);
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    gap: 1rem;
-    padding: 2rem;
-    border-radius: 10px;
-    width: 19.8rem;
-    background-color: var(--col-dark-greyish-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 19.8rem;
+  background-color: var(--col-dark-greyish-blue);
 }
 
 .advice-title {
-    color: var(--col-neon-green);
-    letter-spacing: 4px;
-    font-size: 14px;
+  color: var(--col-neon-green);
+  letter-spacing: 4px;
+  font-size: 14px;
 }
 
-.advice-description  {
-    color: var(--col-light-cyan);
+.advice-description {
+  color: var(--col-light-cyan);
 }
 
 .divider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 1rem;
-    margin-bottom: 0.1rem;
-    background-image: url('./images/pattern-divider-desktop.svg');
-    background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 1rem;
+  margin-bottom: 0.1rem;
+  background-image: url('./images/pattern-divider-desktop.svg');
+  background-repeat: no-repeat;
 }
 
 .divider svg {
-    width: 100%;
+  width: 100%;
 }
 
-
 .advice-btn {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: none;
-    bottom: -1.3rem;
-    background-color: var(--col-neon-green);
-    padding: 0.8rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  bottom: -1.3rem;
+  background-color: var(--col-neon-green);
+  padding: 0.8rem;
 }
 
 .advice-btn:hover {
-    cursor: pointer;
-    background-color: hsl(150, 100%, 80%);;
+  cursor: pointer;
+  background-color: #51d85dd2;
+  -webkit-box-shadow: inset -1px 3px 8px 5px #1fff50, 2px 5px 16px 0px #97f0b5,
+    5px 5px 15px 5px rgba(255, 255, 255, 0);
+  box-shadow: inset -1px 3px 8px 5px #55f362, 2px 5px 16px 0px #a8f1c8,
+    5px 5px 15px 5px rgba(248, 248, 248, 0);
 }
 
 @media screen and (max-width: 768px) {
-    main {
-        width: 14.6rem;
-    }
+  main {
+    width: 14.6rem;
+  }
 
-    .divider {
-        background-image: url('images/pattern-divider-mobile.svg');
-    }
-    }
+  .divider {
+    background-image: url('images/pattern-divider-mobile.svg');
+  }
+}
