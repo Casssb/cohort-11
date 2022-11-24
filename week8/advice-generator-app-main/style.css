@@ -68,7 +68,7 @@ main {
     align-items: center;
     border-radius: 50%;
     border: none;
-    top: 92%;
+    bottom: -1.3rem;
     background-color: var(--col-neon-green);
     padding: 0.8rem;
 }
