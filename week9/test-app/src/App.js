@@ -1,11 +1,23 @@
-import Header from './Header';
+import Card from './modules/Card';
+import spainPic from './img/spain.jpg';
+import germanyPic from './img/germany.jpg';
+import francePic from './img/france.jpg'
 import './App.css';
 
 function App() {
-  const name = 'Bob';
   return (
     <div className="App">
-      <Header name={name}/>
+      <Card title={'Spain'} description={'hot'} imgSrc={spainPic} />
+      <Card
+        title={'Germany'}
+        description={'good beer'}
+        imgSrc={germanyPic}
+      />
+      <Card
+        title={'France'}
+        description={'filled with French people'}
+        imgSrc={francePic}
+      />
     </div>
   );
 }
