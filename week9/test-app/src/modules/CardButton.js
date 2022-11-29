@@ -1,7 +1,7 @@
 const CardButton = (props) => {
-    const { darkmode } = props;
+    const { darkmode, styles, children } = props;
     return (
-        <button onClick={darkmode}>Darkmode</button>
+        <button style={styles} onClick={darkmode}>{children}</button>
     );
   };
   export default CardButton;

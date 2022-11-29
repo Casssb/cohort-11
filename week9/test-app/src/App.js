@@ -4,6 +4,7 @@ import germanyPic from './img/germany.jpg';
 import francePic from './img/france.jpg';
 import { useState } from 'react';
 import './App.css';
+import CardButton from './modules/CardButton';
 
 function App() {
   const [darkmode, setDarkmode] = useState(false);
@@ -20,6 +21,8 @@ function App() {
         imgSrc={spainPic}
         darkmode={toggleDarkMode}
         darkValue={darkmode}
+        btnColor={'red'}
+        btnBackground={'orange'}
       />
       <Card
         title={'Germany'}
@@ -27,6 +30,8 @@ function App() {
         imgSrc={germanyPic}
         darkmode={toggleDarkMode}
         darkValue={darkmode}
+        btnColor={'white'}
+        btnBackground={'black'}
       />
       <Card
         title={'France'}
@@ -34,8 +39,10 @@ function App() {
         imgSrc={francePic}
         darkmode={toggleDarkMode}
         darkValue={darkmode}
+        btnColor={'white'}
+        btnBackground={'blue'}
       />
-      <button onClick={toggleDarkMode}>Darkmode</button>
+      <CardButton darkmode={toggleDarkMode}>App Darkmode</CardButton>
     </div>
   );
 }
