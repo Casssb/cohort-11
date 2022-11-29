@@ -6,6 +6,11 @@
   padding: 2rem;
   gap: 2rem;
   width: 100%;
+  height: 100vh;
+}
+
+.AppDark {
+  background-color: black;
 }
 
 .App-card {
@@ -17,6 +22,11 @@
   padding: 1rem;
   gap: 2rem;
   width: 30rem;
+}
+
+.darkmode {
+  background-color: rgb(77, 77, 77);
+  color: azure;
 }
 
 .CardImage {
