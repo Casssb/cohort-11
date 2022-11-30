@@ -1,33 +1,74 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import Card from './modules/Card';
+import React, { Component } from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      picture: '',
+      description: '',
+    };
 
-  return (
-    <div className="text-blue-600">
-      <div className='text-red-300 p-4'>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    this.getData = this.getData.bind(this);
+  }
+
+  componentDidMount() {
+    this.getData();
+  }
+
+  handlePokiName(data) {
+    const { name } = data;
+    const image = data.sprites.front_default;
+    this.setState({
+      name: name,
+      picture: image,
+    });
+  }
+
+  handlePokiSpecies(data) {
+    const description = data.flavor_text_entries[0].flavor_text;
+    this.setState({
+      description: description,
+    });
+  }
+
+  async getData() {
+    const pokeId = Math.floor(Math.random() * 151);
+    try {
+      const responses = await Promise.all([
+        fetch(`https://pokeapi.co/api/v2/pokemon/${pokeId}/`),
+        fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokeId}/`),
+      ]);
+      const [nameData, speciesData] = await Promise.all(
+        responses.map((response) => response.json())
+      );
+      this.handlePokiName(nameData);
+      this.handlePokiSpecies(speciesData);
+    } catch (err) {
+      throw err;
+    }
+    // fetch(`https://pokeapi.co/api/v2/pokemon/${pokeId}/`)
+    //   .then((response) => response.json())
+    //   .then((data) => this.handlePokiName(data));
+  }
+
+  render() {
+    const { name, picture, description } = this.state;
+    return (
+      <div className="h-screen flex justify-center items-center bg-slate-200">
+        <Card
+          name={name}
+          pic={picture}
+          description={description}
+          getPoki={this.getData}
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    );
+  }
 }
 
-export default App
+
+// `https://pokeapi.co/api/v2/pokemon/${pokeId}/`  main
+
+//`https://pokeapi.co/api/v2/pokemon-species/${}pokeId/`  species
