@@ -13,6 +13,13 @@ export default class App extends Component {
     this.getData = this.getData.bind(this);
   }
 
+/*   useEffect(() => {
+    this.getData();
+  
+
+  }, []) */
+  
+
   componentDidMount() {
     this.getData();
   }
