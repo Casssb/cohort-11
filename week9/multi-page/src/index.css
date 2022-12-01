@@ -67,7 +67,18 @@ button:focus-visible {
   align-items: center;
   width: 100%;
   height: 100%;
-  margin-bottom: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.darkmode {
+  background-color: #242424;
+  color: #f9f9f9;
+}
+
+.lightmode {
+  background-color: #f9f9f9;
+  color: #535bf2;
 }
 ul {
   display: flex;
