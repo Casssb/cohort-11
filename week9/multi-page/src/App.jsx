@@ -29,12 +29,14 @@ function App() {
             path="dashboard"
             element={<Dashboard toggle={toggleDarkmode} />}
           ></Route>
-          <Route path="dashboard" element={<Dashboard toggle={toggleDarkmode} />}>
+          <Route
+            path="dashboard"
+            element={<Dashboard toggle={toggleDarkmode} />}
+          >
             <Route path="home" element={<Home toggle={toggleDarkmode} />} />
           </Route>
         </Routes>
       </BrowserRouter>
-      ;
     </div>
   );
 }
